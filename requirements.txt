@@ -1,2 +1,4 @@
-Flask==3.0.3
-scikit-learn==1.5.1
+Flask
+gunicorn
+pickle
+scikit-learn
