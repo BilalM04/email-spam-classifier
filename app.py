@@ -4,10 +4,10 @@ import pickle
 app = Flask(__name__)
 
 # Load your trained model and the feature extractor (vectorizer)
-with open('spam_classifier_model.pkl', 'rb') as model_file:
+with open('models/spam_classifier_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open('feature_extractor.pkl', 'rb') as extractor_file:
+with open('models/feature_extractor.pkl', 'rb') as extractor_file:
     feature_extraction = pickle.load(extractor_file)
 
 @app.route('/predict', methods=['GET'])
