@@ -90,7 +90,7 @@ The dataset used for training the model is sourced from [Kaggle](https://www.kag
    ```
    python app.py
    ```
-2. Use the same endpoints as described in the API Interface section, but for local use, the URL root will be `http://127.0.0.1:####/`.
+2. Use the same endpoints as described in the API Interface section, but for local use, the URL root will be `http://127.0.0.1:####/`, where `####` is the port number.
 
 
 
