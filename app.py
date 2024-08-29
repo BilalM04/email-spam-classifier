@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pickle
 
 app = Flask(__name__)
+CORS(app)
 
 # Load your trained model and the feature extractor (vectorizer)
 with open('models/spam_classifier_model.pkl', 'rb') as model_file:
